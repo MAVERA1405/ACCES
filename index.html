@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mavera Accesorios</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <h1>Mavera</h1>
+
+    <p>Diseñá tu collar</p>
+
+</header>
+
+<main>
+
+    <section class="preview">
+
+        <h2>Tu collar</h2>
+
+        <div id="collarPreview"></div>
+
+    </section>
+
+    <section class="catalogo">
+
+        <h2>Elegí tus piezas</h2>
+
+        <div class="piezas">
+
+            <div class="pieza">
+
+                <img src="img/tubular.png">
+
+                <button onclick="agregarPieza('Tubular Bordó','img/tubular.png')">
+                    Agregar
+                </button>
+
+            </div>
+
+            <div class="pieza">
+
+                <img src="img/calada.png">
+
+                <button onclick="agregarPieza('Calada Bordó','img/calada.png')">
+                    Agregar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="acciones">
+
+        <button onclick="borrarUltima()" class="btn-secundario">
+            Borrar última
+        </button>
+
+        <button onclick="vaciarCollar()" class="btn-secundario">
+            Vaciar collar
+        </button>
+
+        <button onclick="cotizar()" class="btn-whatsapp">
+            💬 COTIZAR
+        </button>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
